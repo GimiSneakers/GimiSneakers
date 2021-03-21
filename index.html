@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>GimiSneakers</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  
+  <body>
+    <header>
+      <h1>GimiSneakers</h1>
+      <h2>Titolo descrittivo</h2>
+    </header>
+
+    <main>
+      <div class="item">
+        <figure>
+          <img src="imgs/sample.webp">
+          <figcaption>
+            <h3>Modello</h3>
+            Taglia/altro
+          </figcaption>
+        </figure>
+      </div>
+    </main>
+
+    <hr>
+
+    <footer>
+      <section>
+        <div>
+          <h3>WhatsApp:</h3>
+          <a href="https://api.whatsapp.com/send?phone=393512770013" target="_blank">
+            +39 351 277 0013
+          </a>
+        </div>
+  
+        <div>
+          <h3>Instagram:</h3>
+          <a href="https://instagram.com/gabry_gimi" target="_blank">
+            @gabry_gimi
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <span>
+          <strong>GimiSneakers</strong>
+
+          <span>
+            <small>by</small>
+            GabrieleGimignani
+          </span>
+        </span>
+      </section>
+    </footer>
+  </body>
+
+  <script>
+    for (var item of document.querySelectorAll(".item"))
+      item.onclick = () =>
+        document.querySelector('footer').scrollIntoView();
+  </script>
+</html>
