@@ -88,6 +88,7 @@ main * {
   display: inline-block;
   width: calc(100% / var(--cols));
   box-sizing: border-box;
+  vertical-align: middle;
 }
 
 figure {
@@ -111,20 +112,19 @@ img {
   object-fit: cover;
 }
 
+figcaption {
+  padding: 1em;
+}
+
 h3 {
   font-size: 1rem;
   margin-bottom: .5rem;
 }
 
-hr {
-  margin: auto;
-  width: 90%;
-  border: .2rem solid #CCC;
-  border-radius: 1rem;
-}
-
 footer {
   padding-top: 3rem;
+  padding-bottom: 3rem;
+  background: #151515;
 }
 
 footer h3 {
@@ -147,38 +147,6 @@ a:hover {
 
 a:active {
   opacity: 97.5%;
-}
-
-section:last-of-type {
-  background-color: #222;
-  margin-top: 3rem;
-  padding: 1rem;
-}
-
-section:last-of-type > span {
-  word-spacing: .5rem;
-  font-family: 'Sacramento';
-  font-size: 1.5rem;
-  font-style: italic;
-}
-
-
-section:last-of-type > span span {
-  white-space: nowrap;
-  font-size: 1.5rem;
-  font-style: italic;
-}
-
-section:last-of-type span strong {
-  all: unset;
-  font-size: 2.25rem;
-  font-style: normal;
-}
-
-section:last-of-type span small {
-  all: unset;
-  font-size: 1rem;
-  font-family: 'Poppins';
 }
 
 @media (max-width: 1536px) {
